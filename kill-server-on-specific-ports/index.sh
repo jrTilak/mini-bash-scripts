@@ -12,8 +12,8 @@ do
     # Find the process running on the given port and kill it
     pid=$(lsof -t -i:"$port")
     if [ -n "$pid" ]; then
-        echo "Killing process $pid on port $port"
         kill -9 "$pid"
+        echo "Killed process $pid on port $port"
     else
         echo "No process found on port $port"
     fi
