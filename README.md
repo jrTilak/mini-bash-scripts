@@ -1,0 +1,1 @@
+## Collection of mini bash scripts for daily basic usage.
